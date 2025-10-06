@@ -1,16 +1,16 @@
 /* Variáveis CSS para Material Design */
 :root {
-  --youtube-red: #FF0000;
-  --material-green: #4CAF50;
-  --material-yellow: #FFC107;
-  --material-red: #F44336;
-  --material-blue: #2196F3;
+  --youtube-red: #ff0000;
+  --material-green: #4caf50;
+  --material-yellow: #ffc107;
+  --material-red: #f44336;
+  --material-blue: #2196f3;
   --text-primary: #212121;
   --text-secondary: #757575;
-  --background-light: #FAFAFA;
-  --white: #FFFFFF;
-  --elevation-1: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  --elevation-2: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  --background-light: #fafafa;
+  --white: #ffffff;
+  --elevation-1: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  --elevation-2: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   --border-radius: 12px;
   --border-radius-pill: 24px;
 }
@@ -39,7 +39,8 @@
 }
 
 body {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
   background-color: var(--white);
   color: var(--text-primary);
   line-height: 1.5;
@@ -78,7 +79,7 @@ body {
 }
 
 .balance-display {
-  background: #E8F5E8;
+  background: #e8f5e8;
   color: var(--material-green);
   padding: 8px 16px;
   border-radius: var(--border-radius-pill);
@@ -103,7 +104,7 @@ body {
   border-radius: var(--border-radius);
   overflow: hidden;
   box-shadow: var(--elevation-2);
-  background: #000;
+  background: white;
   aspect-ratio: 16/9;
   width: 100%;
 }
@@ -132,7 +133,7 @@ body {
 
 /* Evaluation Section - Blue Card */
 .evaluation-section {
-  background-color: #065FD421;
+  background-color: #065fd421;
   border-radius: var(--border-radius);
   padding: 16px 16px;
   margin: 24px auto 0;
@@ -164,20 +165,20 @@ body {
   padding: 16px 24px;
   border: none;
   border-radius: 50px; /* Pill shape */
-  color: #065FD4;
+  color: #065fd4;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease;
   min-width: 160px;
   height: 60px;
-  background: #CEE4FF;
+  background: #cee4ff;
 }
 
 .eval-btn:hover:not(:disabled) {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(6, 95, 212, 0.3);
-  background: #B8D4FF;
+  background: #b8d4ff;
 }
 
 .eval-btn:disabled {
@@ -201,31 +202,33 @@ body {
   opacity: 1;
   cursor: pointer;
   pointer-events: auto;
-  background: #CEE4FF;
-  color: #065FD4;
+  background: #cee4ff;
+  color: #065fd4;
 }
 
 .eval-btn.selected {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(6, 95, 212, 0.4);
-  background: #B8D4FF;
+  background: #b8d4ff;
 }
 
 /* Estilos específicos para os novos botões */
-.not-relevant-btn, .relevant-btn {
-  background: #CEE4FF;
-  color: #065FD4;
+.not-relevant-btn,
+.relevant-btn {
+  background: #cee4ff;
+  color: #065fd4;
 }
 
-.not-relevant-btn:hover:not(:disabled), .relevant-btn:hover:not(:disabled) {
-  background: #B8D4FF;
+.not-relevant-btn:hover:not(:disabled),
+.relevant-btn:hover:not(:disabled) {
+  background: #b8d4ff;
 }
 
 .eval-icon {
   width: 20px;
   height: 20px;
-  color: #065FD4;
-  stroke: #065FD4;
+  color: #065fd4;
+  stroke: #065fd4;
 }
 
 .eval-btn span {
@@ -240,7 +243,8 @@ body {
 }
 
 @keyframes gentle-pulse {
-  0%, 100% {
+  0%,
+  100% {
     box-shadow: 0 0 12px rgba(6, 95, 212, 0.2), 0 0 20px rgba(6, 95, 212, 0.15);
     transform: scale(1);
   }
@@ -270,7 +274,7 @@ body {
 }
 
 .action-btn:hover {
-  background: #1976D2;
+  background: #1976d2;
   transform: translateY(-2px);
   box-shadow: var(--elevation-3);
 }
@@ -284,7 +288,7 @@ body {
 }
 
 .vsl-title h2 {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 20px;
   font-weight: 400;
   color: var(--text-primary);
@@ -294,7 +298,7 @@ body {
 
 .vsl-title h2 b {
   font-weight: 600;
-  color: #065FD4;
+  color: #065fd4;
 }
 
 /* Step Images Section */
@@ -372,7 +376,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   border: 1px solid #0000001a;
   border-radius: 30px;
   padding: 4px 12px;
@@ -388,7 +392,7 @@ body {
 .verified-text {
   font-size: 12px;
   font-weight: 500;
-  color: #065FD4;
+  color: #065fd4;
   white-space: nowrap;
 }
 
@@ -400,7 +404,7 @@ body {
 }
 
 .payment-btn {
-  background: #4CAF50;
+  background: #11c100;
   color: white;
   border: none;
   padding: 24px 48px;
@@ -492,7 +496,7 @@ body {
 }
 
 .youtube-text {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 18px;
   font-weight: 500;
   color: #0f0f0f;
@@ -510,7 +514,7 @@ body {
 }
 
 .popup-main-title h2 {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 24px;
   font-weight: 400;
   color: #0f0f0f;
@@ -537,7 +541,7 @@ body {
 }
 
 .available-balance-text {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 14px;
   color: #606060;
   display: block;
@@ -555,7 +559,7 @@ body {
 }
 
 .main-balance {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 42px;
   font-weight: 500;
   color: #1976d2;
@@ -564,10 +568,10 @@ body {
 }
 
 .balance-increment {
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 20px;
   font-weight: 500;
-  color: #4CAF50;
+  color: #4caf50;
   line-height: 1;
   text-align: center;
   margin-left: 8px;
@@ -581,12 +585,13 @@ body {
   justify-content: stretch;
 }
 
-.continue-btn, .withdraw-btn {
+.continue-btn,
+.withdraw-btn {
   flex: 1;
   padding: 12px 16px;
   border: none;
   border-radius: 24px;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
@@ -639,7 +644,7 @@ body {
   }
 
   .app-main {
-    padding: 20px 16px 0;
+    padding: 20px 6px 0;
   }
 
   .video-container {
@@ -913,7 +918,7 @@ body {
   border: none;
   border-radius: 24px;
   padding: 16px 32px;
-  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
@@ -963,4 +968,24 @@ body {
 /* Utility Classes */
 .esconder {
   display: none;
+}
+
+/* --- Fix visual do VSL (último vídeo) --- */
+.video-container.vsl-active {
+  overflow: visible !important;
+  aspect-ratio: auto !important;
+  height: auto !important;
+  /* min-height: 360px; */
+  box-shadow: none;
+}
+
+.video-container.vsl-active #vsl {
+  overflow: visible !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+#player {
+  border-radius: 10px !important;
+  box-shadow: var(--elevation-2) !important;
 }
